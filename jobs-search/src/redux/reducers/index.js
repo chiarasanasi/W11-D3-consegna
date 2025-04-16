@@ -35,7 +35,7 @@ const mainReducer = (state = initialState, action) => {
         ...state,
         mainResearch: {
           ...state.mainResearch,
-          likedJobs: [action.payload],
+          likedJobs: [...(state.mainResearch.likedJobs + action.payload)],
         },
       }
     default:

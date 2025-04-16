@@ -22,7 +22,7 @@ const Job = ({ data }) => {
       className="mx-0 mt-3 p-3"
       style={{ border: "1px solid #00000033", borderRadius: 4 }}
     >
-      {console.log("DATA", data)}
+      {/* {console.log("DATA", data)} */}
       <Col xs={4}>
         <div className="d-flex flex-row align-items-center">
           <Button
@@ -32,6 +32,9 @@ const Job = ({ data }) => {
                 type: "ADD_TO_PREFE",
                 payload: data,
               })
+              {
+                console.log(`DATA ${data.title}`, data)
+              }
             }}
             className="rounded-5 px-2 py-1 me-3"
           >
